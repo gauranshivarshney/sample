@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { FiChevronDown, FiUserPlus } from 'react-icons/fi'
+import { FiChevronDown } from 'react-icons/fi'
 import { auth } from '@/auth'
 import Image from 'next/image'
 import SignOut from './SignOut'

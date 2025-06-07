@@ -7,7 +7,7 @@ import { db } from '@/firebase'
 import Link from 'next/link'
 import { IoChatboxOutline } from 'react-icons/io5'
 import { BiSolidTrashAlt } from 'react-icons/bi'
-import { animate, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const ChatRow = ({ id }: { id: string }) => {
     const pathname = usePathname()
