@@ -13,7 +13,7 @@ import { useRouter } from 'next/navigation';
 import useSWR from 'swr';
 import SelectionModel from './SelectionModel';
 
-const ChatInput = ({ id }: { id: string }) => {
+const ChatInput = ({ id }: { id?: string }) => {
   const [prompt, setPrompt] = useState("")
   const { data: session } = useSession()
   const [loading, setLoading] = useState(false)

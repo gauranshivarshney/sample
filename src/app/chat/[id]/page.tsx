@@ -2,13 +2,11 @@ import ChatInput from '@/components/ChatInput'
 import Chat from '@/components/Chat'
 
 interface PageProps {
-  params: {
-    id: string
-  }
+  params: Promise<{id:string}>
 }
 
-const ChatPage = ({ params }: PageProps) => {
-  const { id } = params;
+const ChatPage = async ({ params }: PageProps) => {
+  const { id } = await params;
 
   return (
     <div className='flex flex-col justify-center h-[100%] p-5 overflow-hidden'>
