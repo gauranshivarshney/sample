@@ -1,13 +1,13 @@
-import ChatInput from '@/components/ChatInput';
-import Chat from '@/components/Chat';
+import ChatInput from '@/components/ChatInput'
+import Chat from '@/components/Chat'
 
-type PageProps = {
+interface PageProps {
   params: {
-    id: string;
-  };
-};
+    id: string
+  }
+}
 
-export default function ChatPage({ params }: PageProps) {
+const ChatPage = ({ params }: PageProps) => {
   const { id } = params;
 
   return (
@@ -19,3 +19,5 @@ export default function ChatPage({ params }: PageProps) {
     </div>
   );
 }
+
+export default ChatPage

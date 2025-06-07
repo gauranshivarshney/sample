@@ -1,6 +1,8 @@
+/* eslint-disable */
+
 import openai from "./chatgpt";
 
-const query = async (prompt: string, id: string, model: string) => {
+const query = async (prompt: string, _id: string, _model: string) => {
     const res = await openai.chat.completions.create({
         model: "gpt-3.5-turbo",
         messages: [

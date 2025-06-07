@@ -47,8 +47,8 @@ export const POST = async (req: NextRequest) => {
             .add(message);
 
         return NextResponse.json({ success: true, message: "ChatGPT has responded!" }, { status: 200 });
-    } catch (error: any) {
-        console.error("Server error:", error);
-        return NextResponse.json({ error: error.message || error.toString() }, { status: 500 });
+    } catch (error: unknown) {
+        const message = error instanceof Error ? error.message : "An unknown error occured."
+        return NextResponse.json({ error: message }, { status: 500 })
     }
 };
