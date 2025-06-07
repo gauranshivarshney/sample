@@ -2,13 +2,13 @@ import React from 'react'
 import ChatInput from '@/components/ChatInput'
 import Chat from '@/components/Chat'
 
-interface Props {
+interface PageProps {
   params: {
     id: string
   }
 }
 
-const ChatPage = async ({ params } : Props) => {
+const ChatPage = ({ params } : PageProps) => {
   const { id } = params;
   return (
     <div className='flex flex-col justify-center h-[100%] p-5 overflow-hidden'>
