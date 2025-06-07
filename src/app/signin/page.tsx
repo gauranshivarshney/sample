@@ -29,7 +29,7 @@ const SignInPage = async () => {
                             await signIn("google")
                         }}
                     >
-                        <button type="submit" className='border border-white/50 py-2 px-6 rounded-md text-base font-semibold flex items-center gap-1 hover:border-white text-white-80 hover:text-white duration-300 ease-in-out'><Image src={googleImage} alt="googleImage" className='w-8' />Signin with Google</button>
+                        <button type="submit" className='border border-white/50 py-2 px-6 rounded-md text-base font-semibold flex items-center gap-1 hover:border-white text-white-80 hover:text-white duration-300 ease-in-out cursor-pointer'><Image src={googleImage} alt="googleImage" className='w-8' />Signin with Google</button>
                     </form>
                     <form
                         action={async () => {
@@ -37,7 +37,7 @@ const SignInPage = async () => {
                             await signIn()
                         }}
                     >
-                        <button type="submit" className='border border-white/50 py-2 px-6 rounded-md text-base font-semibold flex items-center gap-1 hover:border-white text-white-80 hover:text-white duration-300 ease-in-out'><Image src={githubImage} alt="googleImage" className='w-8' />Signin with GitHub</button>
+                        <button type="submit" className='border border-white/50 py-2 px-6 rounded-md text-base font-semibold flex items-center gap-1 hover:border-white text-white-80 hover:text-white duration-300 ease-in-out cursor-pointer'><Image src={githubImage} alt="googleImage" className='w-8' />Signin with GitHub</button>
                     </form>
                 </div>
             </div>
