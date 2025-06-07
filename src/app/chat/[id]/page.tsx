@@ -9,7 +9,7 @@ interface Props {
 }
 
 const ChatPage = async ({ params } : Props) => {
-  const { id } = await params;
+  const { id } = params;
   return (
     <div className='flex flex-col justify-center h-[100%] p-5 overflow-hidden'>
       <div className='flex-1 pt-10 overflow-y-scroll'>
